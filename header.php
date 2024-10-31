@@ -1,9 +1,16 @@
 <?php
 require "config.php";
-require "models/category.php";
 require "models/db.php";
 require "models/item.php";
+require "models/category.php";
+
+
+$item = new Item;
+$getAllItems = $item->getAllItems();
+$category = new Category;
+$getAllCategories = $category->getAllCategories();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
